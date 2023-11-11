@@ -132,7 +132,7 @@ function reset(){
 function LapContainer(a,b,c,d){
 	document.getElementById("lap_container").style.display = "block";
 	const head = document.createElement("h3");
-	const result = d+") " +a+ " : "+ b+" . "+c;
+	const result = d+") " +a+ " : "+ b+" : "+c;
 	const node = document.createTextNode(result);
 	head.appendChild(node);
 	const element = document.getElementById("inner_lap");
