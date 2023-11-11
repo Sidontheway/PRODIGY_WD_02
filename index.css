@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'clock';
-    src: url('clock.ttf') format('truetype');
+    src: url('font/clock.ttf') format('truetype');
     /* Safari, Android, iOS */
     font-weight: 400;
     font-style: normal;
@@ -38,7 +38,7 @@ span{
 /* buttons styling */
 
 #btn_container{
-    margin-left: 17%;
+    margin-left: 15%;
 }
 button {
     height: 40px;
