@@ -25,8 +25,8 @@
 
                 <!-- container for buttons -->
 
-                <div>
-                    <button id="btn_reset">Reset</button>
+                <div id="btn_container">
+                    <button id="btn_reset" onclick="reset()" disabled>Reset</button>
                     <button id="btn_lap">Lap</button>
                     <button id="btn_start">Start</button>
                     <button id="btn_stop">Stop</button>
@@ -36,8 +36,11 @@
 
             <!-- container for lap items -->
 
-            <div>
-                Contains of lap items
+            <div id="lap_container">
+                <h1>Laps:</h1>
+                <div id="inner_lap">
+
+                </div>
             </div>
 
         </div>

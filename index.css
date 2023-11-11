@@ -9,8 +9,7 @@
 
 body {
    
-    color: gray;
-    
+    color:rgb(73, 69, 69);
     background-color: gainsboro;
 }
 
@@ -37,6 +36,10 @@ span{
     margin-left:5px;
 }
 /* buttons styling */
+
+#btn_container{
+    margin-left: 17%;
+}
 button {
     height: 40px;
     width: 80px;
@@ -47,11 +50,21 @@ button {
     border-radius: 10%;
     border: 0px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 #btn_reset {
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(240, 236, 12);
 }
+#btn_reset:hover{
+    background-color: rgb(247, 247, 52);
+}
+#btn_reset:disabled{
+    background-color: yellow;
+    cursor:not-allowed;
+}
+
+
 
 #btn_lap {
     background-color: blue;
@@ -65,13 +78,30 @@ button {
 
 #btn_start {
     background-color: green;
+    display: inline-block;
 }
 
+/* styling of lap container */
+#lap_container{
+    padding-left: 25%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-right: 25%;
+    background-color: white;
+    font-family: clock;
+    margin: 3%;
+    display: none;
+    font-size: 20px;
+}
 
+#inner_lap{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 /* for responsiveness  for tablets*/
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 860px) {
    
     .contain {
         font-size: 100px;
