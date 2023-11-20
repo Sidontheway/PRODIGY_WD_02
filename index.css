@@ -1,108 +1,41 @@
-@font-face {
-    font-family: 'clock';
-    src: url('clock.ttf') format('truetype');
-    /* Safari, Android, iOS */
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+*{
+    padding:0;
+    margin:0;
+    font-family :'Itim', cursive;
 }
 
-body {
-   
-    color: gray;
-    
-    background-color: gainsboro;
+.background{
+    background-color: #12181B;
+    height:100vh;
+    padding-top :1px;
+}
+
+.title{
+    color:white;
+    text-align :center;
+    font-size :40px;
+    margin-top:10%;
+}
+
+.display{
+    color:white;
+    font-size:25px;
+    text-align:center;
+    margin-top:1em;
+    margin-bottom :1em;
+}
+
+.hide{
+    display:none;
 }
 
 .container {
-    background-color: white;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 50px;
-    justify-content: center;
-    padding-left: 25%;
-    font-family: clock;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
 }
 
-
-.contain {
-    font-size: 200px;
-}
-
-.contain_mil {
-    font-size: 100px;
-}
-
-span{
-    margin-left:5px;
-}
-/* buttons styling */
-button {
-    height: 40px;
-    width: 80px;
-    align-items: center;
-    font-size: medium;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    border-radius: 10%;
-    border: 0px;
-    cursor: pointer;
-}
-
-#btn_reset {
-    background-color: rgb(255, 255, 0);
-}
-
-#btn_lap {
-    background-color: blue;
-    display:none;
-}
-
-#btn_stop {
-    background-color: red;
-    display:none;
-}
-
-#btn_start {
-    background-color: green;
-}
-
-
-
-/* for responsiveness  for tablets*/
-
-@media only screen and (max-width: 790px) {
-   
-    .contain {
-        font-size: 100px;
-    }
-
-    .contain_mil {
-        font-size: 50px;
-    }
-
-    button {
-        height: 30px;
-        width: 60px;
-        font-size:normal;
-    }
-}
-
-/* for smallest width devices */
-@media only screen and (max-width: 450px) {
-   
-    .contain {
-        font-size: 50px;
-    }
-
-    .contain_mil {
-        font-size: 25px;
-    }
-
-    button {
-        height: 20px;
-        width: 35px;
-        font-size:small;
-        padding:3px;
-    }
+.tile{
 }
